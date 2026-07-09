@@ -14,11 +14,11 @@ type LoaderProps = {
   onFinish: () => void;
 };
 
-export function Loader({onFinish}: LoaderProps): React.JSX.Element {
-  useEffect(() => {
-    const timer = setTimeout(onFinish, LOADER_DURATION_MS);
-    return () => clearTimeout(timer);
-  }, [onFinish]);
+export function Loader(): React.JSX.Element {
+  //useEffect(() => {
+  //  const timer = setTimeout(onFinish, LOADER_DURATION_MS);
+  //  return () => clearTimeout(timer);
+  //}, [onFinish]);
 
   return (
     <ImageBackground
